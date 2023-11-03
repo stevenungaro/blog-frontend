@@ -1,0 +1,31 @@
+#posts-index img {
+  width: 300px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title-input {
+  width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  box-shadow: 0 0 15px 4px grey;
+}
+
+.body-input {
+  width: 500px;
+  height: 6em;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  box-shadow: 0 0 15px 4px grey;
+}
+
+.image-input {
+  width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 15px 4px grey;
+}
