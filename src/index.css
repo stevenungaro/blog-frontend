@@ -1,3 +1,11 @@
+header {
+  background-image: "https://i.etsystatic.com/10788288/r/il/61f54f/1982615236/il_1588xN.1982615236_ccs4.jpg";
+}
+
+body {
+  background-color:whitesmoke;
+}
+
 #posts-index img {
   width: 300px;
 }
@@ -6,26 +14,54 @@ html {
   scroll-behavior: smooth;
 }
 
-.title-input {
+#title-input {
   width: 500px;
   padding: 10px;
   margin: 10px 0;
   border: 0;
-  box-shadow: 0 0 15px 4px grey;
+  box-shadow: 0 0 15px 4px teal;
 }
 
-.body-input {
+#body-input {
   width: 500px;
   height: 6em;
   padding: 10px;
   margin: 10px 0;
   border: 0;
-  box-shadow: 0 0 15px 4px grey;
+  box-shadow: 0 0 15px 4px teal;
 }
 
-.image-input {
+#image-input {
   width: 500px;
   padding: 10px;
   margin: 10px 0;
-  box-shadow: 0 0 15px 4px grey;
+  box-shadow: 0 0 15px 4px teal;
+}
+
+button {
+  padding: 20px;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-width: 3px;
+  border-color:green;
+  border-style: double;
+}
+
+button:hover {
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card {
+  background-color:blanchedalmond
 }
