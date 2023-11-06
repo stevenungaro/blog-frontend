@@ -1,5 +1,28 @@
 header {
-  background-image: "https://i.etsystatic.com/10788288/r/il/61f54f/1982615236/il_1588xN.1982615236_ccs4.jpg";
+  background-image: "https://previews.123rf.com/images/ewe/ewe0809/ewe080900216/3554960-blog.jpg";
+  font-family: 'Agbalumo';
+  position: fixed;
+  /* background-color: whitesmoke;*/
+  left:0px;
+  top:0px;
+  width: 100%;
+  text-align:left;
+  padding-left: 0px;
+  margin-bottom:auto;
+}
+
+header a {
+  font-family: 'Agbalumo';
+  color:black;
+  font-size: 3em;
+  padding: 20px;
+  text-decoration: none;
+}
+
+header a:hover{
+  color:whitesmoke;
+  background-color: black;
+  height: 50%;
 }
 
 body {
@@ -12,6 +35,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Agbalumo';
 }
 
 #title-input {
@@ -63,5 +87,10 @@ button:hover {
 }
 
 .card {
-  background-color:blanchedalmond
+  background-color:blanchedalmond;
+  border-radius: 10px;
+}
+
+textarea {
+  resize:none;
 }

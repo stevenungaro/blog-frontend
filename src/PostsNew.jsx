@@ -7,7 +7,7 @@ export function PostsNew() {
           Title: <input type="text" id="title-input" />
         </div>
         <div>
-          Body: <textarea type="text" id="body-input" />
+          Body: <textarea cols="10" rows="3" type="text" id="body-input" />
         </div>
         <div>
           Image: <input type="text" id="image-input" />

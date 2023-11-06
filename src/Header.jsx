@@ -2,7 +2,9 @@ export function Header() {
   return (
     <div>
       <header>
-        <a href="#">Home</a> | <a href="#posts-index">All posts</a> | <a href="#posts-new">New post</a>
+        <a href="#"> home </a>
+        <a href="#posts-index">all posts</a>
+        <a href="#posts-new">new post</a>
       </header>
     </div>
   );
