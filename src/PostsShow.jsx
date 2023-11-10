@@ -14,6 +14,7 @@ export function PostsShow(props) {
     <div id="posts-show">
       <h2>Title: {props.post.title}</h2>
       <img src={props.post.image} alt="" id="modalImage" />
+      <p>{props.post.body}</p>
       <form onSubmit={handleSubmit}>
         <div>
           Title: <input type="text" defaultValue={props.post.title} name="title" />
@@ -24,9 +25,13 @@ export function PostsShow(props) {
         <div>
           Image URL: <input type="text" defaultValue={props.post.image} name="image" />
         </div>
-        <button type="submit">Edit recipe</button>
+        <button className="btn btn-primary" type="submit">
+          Edit recipe
+        </button>
       </form>
-      <button onClick={handleClick}>Delete Post</button>
+      <button className="btn btn-danger" onClick={handleClick}>
+        Delete Post
+      </button>
     </div>
   );
 }
