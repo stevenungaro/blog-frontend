@@ -7,7 +7,7 @@ export function PostsShow(props) {
   };
 
   const handleClick = () => {
-    props.onDestroyPost(props.post);
+    props.onDestroyPost(props.post.id);
   };
 
   return (

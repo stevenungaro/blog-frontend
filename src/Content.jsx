@@ -50,9 +50,10 @@ export function Content() {
     });
   };
 
-  const handleDestroyPost = (post) => {
-    axios.delete(`http://localhost:3000/posts/${post.id}.json`).then((response) => {
-      setPosts(posts.filter((p) => p.id !== post.id));
+  const handleDestroyPost = (id) => {
+    // eslint-disable-next-line no-unused-vars
+    axios.delete(`http://localhost:3000/posts/${id}.json`).then((response) => {
+      setPosts(posts.filter((p) => p.id !== id));
       handleClose();
     });
   };
