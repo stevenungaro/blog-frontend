@@ -12,8 +12,14 @@ export function PostsShow(props) {
 
   return (
     <div id="posts-show">
-      <h2>Title: {props.post.title}</h2>
-      <img src={props.post.image} alt="" id="modalImage" />
+      <div className="row">
+        <div className="col-3">
+          <h2>Title: {props.post.title}</h2>
+        </div>
+        <div className="col-9">
+          <img src={props.post.image} alt="" id="modalImage" />
+        </div>
+      </div>
       <p>{props.post.body}</p>
       <form onSubmit={handleSubmit}>
         <div>

@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { PostsIndex } from "./PostsIndex";
 import { PostsNew } from "./PostsNew";
 import { PostsShow } from "./PostsShow";
-
+import { Signup } from "./Signup";
 import { Modal } from "./Modal";
+import { Login } from "./Login";
+import { LogoutLink } from "./LogoutLink";
 import axios from "axios";
 
 export function Content() {
@@ -63,6 +65,9 @@ export function Content() {
   return (
     <div className="container">
       <div id="contentDiv">
+        <Login />
+        <LogoutLink />
+        <Signup />
         <PostsNew onCreatePost={handleCreatePost} />
         <PostsIndex posts={posts} onShowPost={handleShowPost} />
         <Modal show={isPostsShowVisible} onClose={handleClose}>
