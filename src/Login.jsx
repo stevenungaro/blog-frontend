@@ -41,13 +41,13 @@ export function Login() {
           <label htmlFor="formGroupExampleInput" className="form-label">
             Email:
           </label>
-          <input name="email" type="email" className="form-control" id="formGroupExampleInput" />
+          <input name="email" type="email" className="form-control" />
         </div>
         <div className="mb-3">
           <label htmlFor="formGroupExampleInput" className="form-label">
             Password:
           </label>
-          <input name="password" type="password" className="form-control" id="formGroupExampleInput" />
+          <input name="password" type="password" className="form-control" />
         </div>
         <button type="submit">Log Me In.</button>
       </form>

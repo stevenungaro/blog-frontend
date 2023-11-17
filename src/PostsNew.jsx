@@ -5,6 +5,7 @@ export function PostsNew(props) {
     console.log("handle submit done");
     props.onCreatePost(params);
     event.target.reset();
+    window.location.href = "/";
   };
 
   return (
@@ -15,37 +16,19 @@ export function PostsNew(props) {
           <label htmlFor="formGroupExampleInput" className="form-label">
             Title:
           </label>
-          <input
-            name="title"
-            type="text"
-            className="form-control"
-            id="formGroupExampleInput"
-            placeholder="enter blog post title here"
-          />
+          <input name="title" type="text" className="form-control" placeholder="enter blog post title here" />
         </div>
         <div className="mb-3">
           <label htmlFor="formGroupExampleInput" className="form-label">
             Body:
           </label>
-          <input
-            name="body"
-            type="text"
-            className="form-control"
-            id="formGroupExampleInput"
-            placeholder="enter blog post here"
-          />
+          <input name="body" type="text" className="form-control" placeholder="enter blog post here" />
         </div>
         <div className="mb-3">
           <label htmlFor="formGroupExampleInput" className="form-label">
             Image:
           </label>
-          <input
-            name="image"
-            type="text"
-            className="form-control"
-            id="formGroupExampleInput"
-            placeholder="enter image url here"
-          />
+          <input name="image" type="text" className="form-control" placeholder="enter image url here" />
         </div>
         <button type="submit">Post New Blog Entry</button>
       </form>
