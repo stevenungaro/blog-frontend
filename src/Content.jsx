@@ -72,8 +72,7 @@ export function Content() {
           <Route path="/signup" element={<Signup />} />
           <Route path="posts/new" element={<PostsNew onCreatePost={handleCreatePost} />} />
         </Routes>
-        <LogoutLink />
-
+        {localStorage.jwt ? <LogoutLink /> : null}
         <Modal show={isPostsShowVisible} onClose={handleClose}>
           <PostsShow post={currentPost} onUpdatePost={handleUpdatePost} onDestroyPost={handleDestroyPost} />
         </Modal>

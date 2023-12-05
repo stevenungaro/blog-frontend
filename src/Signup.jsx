@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useState } from "react";
 
 export function Signup() {
   const handleSubmit = (event) => {
@@ -12,19 +13,33 @@ export function Signup() {
         event.target.reset();
       })
       .catch((error) => {
+        setStatus(error.response.status);
         console.log(error.response.data.errors);
       });
   };
 
+  const [name, setName] = useState("");
+  const [status, setStatus] = useState(null);
+
   return (
     <div id="signup">
       <h1>Create an Account</h1>
+      {status ? <img src={`https://http.cat/${status}`} /> : null}
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="formGroupExampleInput" className="form-label">
             Name:
           </label>
-          <input name="name" type="text" className="form-control" />
+          <input
+            name="name"
+            type="text"
+            className="form-control"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+          />
+          <small className={name.length > 20 ? "text-danger" : "text-dark"}>
+            {20 - name.length} characters remaining
+          </small>
         </div>
         <div className="mb-3">
           <label htmlFor="formGroupExampleInput" className="form-label">
